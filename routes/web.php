@@ -18,8 +18,9 @@ Route::get('/', function() {
 Route::get('/certificates', function() {
     $data = [
         'pages' => [
-            'Muppet Award'  => 'Richard Wood',
-            'Tindall Award' => 'Jack Mumford',
+            'Unplugging Power Supplies' => 'Jack Mumford',
+            'Plugging things into the UPS' => 'Jack Mumford',
+            'Making loud noises' => 'Jack Mumford',
         ]
     ];
 
