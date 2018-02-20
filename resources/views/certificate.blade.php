@@ -11,11 +11,6 @@
         /*
         Stylesheet is inline for now, just to demo the concepts:
          */
-        body {
-            width: 210mm;
-            height: 297mm;
-        }
-
         .page {
             page-break-after: always;
         }
@@ -38,6 +33,7 @@
         .certificate {
             top: 80mm;
             left: 80mm;
+            font-size: 20pt;
         }
     </style>
 </head>

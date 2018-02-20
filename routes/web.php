@@ -15,7 +15,7 @@ Route::get('/', function() {
     return view('welcome');
 });
 
-Route::get('/certificate', function() {
+Route::get('/certificates', function() {
     $data = [
         'pages' => [
             'Muppet Award'  => 'Richard Wood',
@@ -25,10 +25,6 @@ Route::get('/certificate', function() {
 
 //    return view('certificate', $data);
     $pdf = PDF::loadView('certificate', $data);
-    $pdf->setOptions([
-        'debugLayoutBlocks' => true,
 
-    ]);
-
-    return $pdf->stream();
+    return $pdf->stream('certificates');
 });
